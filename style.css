@@ -1,0 +1,461 @@
+* {
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    z-index: 100000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.navbar {
+    transition: 0.5s;
+    background-color: transparent !important;
+    height: 70px;
+
+}
+
+.navbar.scrolled {
+    background-color: #293462 !important;
+    transition: 0.5s;
+    height: 70px;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #1b244e;
+    background: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+    color: rgba(255, 255, 255, 1);
+}
+
+.logo-himatika {
+    margin-top: -10px;
+    width: 60px;
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 105vh;
+    background: url(img/bg/bg1.jpg);
+    background-size: cover;
+    background-position: 0 -100px;
+
+}
+
+.jumbotron .text-in-jumbotron {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    position: relative;
+    z-index: 1000;
+    color: #fff;
+}
+
+.banner:before,
+.sec2:before,
+.contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgb(183, 194, 201), transparent);
+    pointer-events: none;
+}
+
+.banner:after,
+.sec2:after,
+.contact:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg, rgb(124, 124, 124), transparent);
+    pointer-events: none;
+
+}
+
+
+.height100p {
+    height: 100vh;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.contentBox {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
+.contentBox h1 {
+    font-weight: 800;
+    color: #fff;
+
+}
+
+.contentBox p {
+    color: #fff;
+}
+
+.top {
+    position: relative;
+    z-index: 1000;
+}
+
+.sec3 {
+    padding: 50px 0;
+    background-image: linear-gradient(135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.sec3 h2 {
+    font-weight: bolder;
+}
+
+.headerText {
+    color: #fff;
+}
+
+.teks-shadow {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+}
+
+.headerText h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.placeBox {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: linear-gradient(#21D4FD 50%, #B721FF 100%);
+    margin-top: 30px;
+}
+
+.placeBox .imgBx {
+    widows: 100%;
+    height: 100%;
+}
+
+.placeBox .imgBx img {
+    object-fit: cover;
+    widows: 100%;
+    height: 100%;
+
+}
+
+.placeBox .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    widows: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+}
+
+.placeBox .content h3 {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ededed;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.placeBox .content h3 span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sec2 {
+    height: 100vh;
+    padding: 150px 0 50px 0;
+    position: relative;
+    background: url(img/bg/bg2.jpg);
+    background-size: cover;
+    background-position: 0, -200px;
+}
+
+/* .sec2 .kebawah {
+    margin-top: 40px;
+} */
+
+.sec2 h2 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 4.5rem;
+}
+
+.btnD1 {
+    border: 2px solid #ffffff;
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.15rem;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.blog {
+    position: relative;
+    padding: 100px 0;
+    background-image: linear-gradient(135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.media {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    background: white;
+    transition: .5s;
+}
+
+.media:hover {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 200, 124, 1) 0%, rgba(252, 251, 121, 1) 90%);
+    box-shadow: 0 0 18px rgba(0, 0, 0, .7);
+}
+
+.media img {
+    padding: 10px;
+    width: 100px;
+}
+
+.media h5 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.blogpost .imgBx {
+    height: 400px;
+}
+
+.blogpost .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogpost .content {
+    padding: 15px;
+}
+
+.btnD2 {
+    background: #979797;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;
+}
+
+.btnD2:hover {
+    background: #979797;
+    color: #bdbdbd;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;
+}
+
+.contact {
+    position: relative;
+    padding: 100px 0;
+    background: url(img/image1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.contact h2 {
+    font-weight: 600;
+}
+
+.contact label {
+    font-weight: 400;
+}
+
+.contact form {
+    position: relative;
+    z-index: 1000;
+}
+
+.contact .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    height: 50px;
+    border-radius: 0;
+    background: rgba(0, 0, 0, .6);
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.contact .form-control :focus,
+.contact .form-control :hover {
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: none;
+}
+
+.container-login {
+    position: relative;
+    margin-top: 90px;
+    width: 400px;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    background: #ededed;
+    color: #262626;
+    z-index: 100;
+}
+
+.btn-regis {
+    width: 48%;
+}
+
+
+footer {
+    background: #000;
+    padding: 50px 0 0;
+}
+
+.sci {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.sci li a {
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.sci li a:hover {
+    color: #fff;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.cpryt {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #777;
+}
+
+.rata-tengah {
+    display: flex;
+    justify-content: center;
+}
+
+.alamat {
+    margin: 50px 0 -20px 0;
+}
+
+.ukuran-logo i {
+    width: 150px;
+}
+
+/* file index.php */
+
+section .form-pendaftaran {
+    position: relative;
+    width: 500px;
+    background: #fff;
+    padding: 30px;
+    z-index: 1000;
+}
+
+.zindex {
+    position: relative;
+    z-index: 1000;
+}
+
+/* file login.php   */
+.login-bg {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #21D4FD 15%, #B721FF 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.organ-bg {
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(101, 255, 253, 1) 0%, rgba(36, 153, 238, 1) 90%);
+    width: 100%;
+    height: 100%;
+}
+
+/* organ.php */
+.container .tabel-organ {
+    margin-top: 50px !important;
+}
+
+.copyright {
+    background-image: linear-gradient(109.6deg, rgba(255, 194, 48, 1) 11.2%, rgba(255, 124, 0, 1) 100.2%);
+}
+
+.ukuran-alamat {
+    font-size: 14px;
+}
