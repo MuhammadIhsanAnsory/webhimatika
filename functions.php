@@ -1,7 +1,7 @@
 <?php
 
 
-$conn = mysqli_connect("localhost", "root", "", "himatika");
+$conn = mysqli_connect("localhost", "root", "", "db_himatika");
 
 function query($query)
 {
